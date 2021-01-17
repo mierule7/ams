@@ -1,0 +1,84 @@
+/*
+body {
+    padding: 0;
+    margin: 0;
+}
+*/
+
+/*THIS IS FOR LOGIN FORM*/
+
+.wrapper
+{ 
+    width: 30%; 
+    padding: 5%;
+/*
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+*/
+    
+}
+
+/*END OF LOGIN FORM*/
+
+/*THIS IS FOR SIDEBAR*/
+
+/* This is SIDEBAR */
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+
+.sidebar a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+/*END OF SIDEBAR*/
+
+/*THIS IS FOR MAIN CONTENT*/
+
+div.content-table 
+{
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 100%;
+    margin-bottom: 10px;
+    background-color: #ffff;
+
+}
+
+div.tajuk 
+{
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 100%;
+    margin-bottom: 10px;
+    background-color: #ffff;
+}
+
+div.tambah-user {
+    float: right;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+/*END OF MAIN CONTENT*/
