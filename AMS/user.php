@@ -102,6 +102,11 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     $mysqli->close();
 }
 ?>
+<!-- ******************** THIS IS FOR HEADER ************************ -->
+
+<?php include 'topnav.php'; ?>
+
+<!-- **************************************************************** -->
 
 <!-- ******************** THIS IS FOR HEADER ************************ -->
 
@@ -145,9 +150,9 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             <div class="row">
                 <div class="col-md-12">
                     <div class="page-header">
-                        <h2>Create Record</h2>
+                        <h2>Create a New User</h2>
                     </div>
-                    <p>Please fill this form and submit to add employee record to the database.</p>
+                    <p>Please fill this form and submit to add user to the database.</p>
                     <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
                       <div class="form-group <?php echo (!empty($username_err)) ? 'has-error' : ''; ?>">
                           <label>Username</label>
@@ -185,10 +190,12 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
   </div>
 </div>
 
+<!-- ********   THIS IS FOR LISTING THE USERS ************ -->
+
 <div class="content-title">
   <div class="sub-content-title">
     <div class="tajuk">
-      <h2>User Details</h2>
+      <h2>List of Users</h2>
     </div>
     <div class="tambah-user">
       <!-- Button trigger modal -->

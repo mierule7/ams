@@ -51,6 +51,21 @@ img {
 
 /*END OF LOGIN FORM*/
 
+/*THIS IS FOR TOPBAR*/
+
+.brand {
+    position: absolute;
+/*    border: 1px solid green;*/
+    width: 100%;
+    margin: 5px;
+    z-index: auto;
+}
+
+h2 {
+    text-align: center;
+    color: white;
+}
+
 /*THIS IS FOR SIDEBAR*/
 
 /* This is SIDEBAR */
