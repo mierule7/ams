@@ -1,7 +1,7 @@
 <?php
 // Initialize the session
 session_start();
- 
+
 // Check if the user is logged in, if not then redirect to login page
 if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
     header("location: index.php");
@@ -11,7 +11,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 // Include config file
 require_once "config.php";
 require_once "createuser.php";
- 
+
 // Define variables and initialize with empty values
 $username = $password = $confirm_password = "";
 $username_err = $password_err = $confirm_password_err = "";
@@ -104,7 +104,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 ?>
 <!-- ******************** THIS IS FOR HEADER ************************ -->
 
-<?php include 'topnav.php'; ?>
+
 
 <!-- **************************************************************** -->
 
@@ -145,7 +145,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
       </div>
 <!-- Create POP UP add user -->
       <div class="modal-body">
-                <div class="wrapper">
+      <div class="wrapper">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-12">
@@ -181,7 +181,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             </div>
         </div>
     </div>
-      </div>
+    </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
         <button type="button" class="btn btn-primary">Save changes</button>
@@ -211,9 +211,9 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 
                            // Declare variables
                            $i = 1;
-
+                           $limit = 7;
                            // Attempt select query execution
-                           $sql = "SELECT * FROM users ORDER BY username";
+                           $sql = "SELECT * FROM users ORDER BY username LIMIT $limit";
                            if($result = $mysqli->query($sql)){
                                if($result->num_rows > 0){
                                    echo "<table class='table table-bordered table-striped'>";
@@ -256,7 +256,33 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                            $mysqli->close();
                            ?>
   </table>
-</div>
+  <!-- <nav aria-label="Page navigation example">
+  <ul class="pagination justify-content-end">
+    <li class="page-item disabled">
+      <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+    </li>
+    <li class="page-item"><a class="page-link" href="#">1</a></li>
+    <li class="page-item"><a class="page-link" href="#">2</a></li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item">
+      <a class="page-link" href="#">Next</a>
+    </li>
+  </ul>
+</nav> -->
+<div class="clearfix">
+    <div class="hint-text">Showing <b>5</b> out of <b>25</b> entries</div>
+    <ul class="pagination justify-content-end">
+      <li class="page-item disabled">
+        <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+      </li>
+      <li class="page-item"><a class="page-link" href="#">1</a></li>
+      <li class="page-item"><a class="page-link" href="#">2</a></li>
+      <li class="page-item"><a class="page-link" href="#">3</a></li>
+      <li class="page-item">
+        <a class="page-link" href="#">Next</a>
+      </li>
+    </ul>
+</div
 
 
 <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
@@ -268,4 +294,3 @@ $(document).ready(function() {
     $('#example').DataTable();
 } );
 </script>
-
