@@ -100,7 +100,9 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="wrapper">
+   <div class="bckgroundimg">
+   <img src="img/img_background.jpg" alt="corporate">
+    <div class="wrapper-login">
         <h2>Login</h2>
         <p>Please fill in your credentials to login.</p>
         <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
@@ -120,6 +122,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             </div>
             <p>Don't have an account? <a href="register.php">Sign up now</a>.</p>
         </form>
-    </div>    
+    </div> 
+</div>   
 </body>
 </html>
