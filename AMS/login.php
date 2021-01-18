@@ -1,7 +1,8 @@
+<head>
 <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<!------ Include the above in your HEAD tag ---------->
+<!--- Include the above in your HEAD tag ---------->
 
 <!--Autor: Gabriel Ramirez | Diseñador Web
     Tema:Login Class="Gabriel".
@@ -25,15 +26,15 @@
    alt="" class="rounded mx-auto d-block img-fluid"></a></div>
 
 
-		 
-		<div class="container"> <br>	<br>		
+
+		<div class="container"> <br>	<br>
  	<div class="row">
     	<div class="col"><img src="https://i.imgur.com/87ZUO6G.png" width="150" height="150" class="Avatar" ></div>
     	<div class="col">
 
     	<form class="login100-form validate-form" method=post action=>
     		 <br> <br> <br>
-				<h3 align="center">INICIO DE SESIÓN</h3> <br>	
+				<h3 align="center">INICIO DE SESIÓN</h3> <br>
 					<div class="container">
 						<i class="fa fa-users"></i>
 						<label for="">Username</label>
@@ -55,8 +56,8 @@
 		</div>
  	</div>
  			<div class="panel-footer" style="text-align: center;">| Gabriel Ramírez | Diseño Web |</div>
- 	<br> 
-</div> 
+ 	<br>
+</div>
 								<br> <br> <br> <br>
 <!--====================================FOOOOOOOOTER==============================================-->
 <footer class="page-footer font-small green"><a href="https://www.tonygabriel.ga/" class="btn btn-info btn-sm" target="_blank">Soporte</a>
